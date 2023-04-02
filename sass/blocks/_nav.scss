@@ -1,0 +1,28 @@
+.nav {
+  padding-top: 33px;
+  padding-bottom: 31px;
+  background-color: rgba(16, 16, 29, 0.9);
+
+  @media (max-width: 815px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.nav__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 640px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3
+}

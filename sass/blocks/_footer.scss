@@ -1,0 +1,104 @@
+.footer {
+  background-color: #3D4050;
+  padding: 30px 0;
+}
+
+.footer__row {
+  display: flex;
+
+  @media (max-width: 765px) {
+    display: block;
+  }
+
+  @media (max-width: 625px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &>*:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.footer__company {
+  color: $white;
+  width: 30%;
+  font-size: 13px;
+  padding-right: 2px;
+
+  @media (max-width: 765px) {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}
+
+.footer__link {
+  display: inherit;
+  width: 75%;
+  justify-content: space-between;
+
+  @media (max-width: 765px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+}
+
+.footer__pay_list {
+  color: $lightGray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  padding: 0 2px;
+  border-left: 1px solid $lightGray;
+  border-right: 1px solid $lightGray;
+
+  @media (max-width: 765px) {
+    border: none;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 5px;
+  }
+
+  .footer__pay_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    gap: 5px;
+  }
+}
+
+.footer__social_list {
+  color: $white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  gap: 5px;
+  padding-left: 2px;
+
+  @media (max-width: 765px) {
+    width: 100%;
+    padding: 0;
+  }
+
+  .footer__social_item {
+    display: flex;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 13px;
+      gap: 5px;
+    }
+  }
+}

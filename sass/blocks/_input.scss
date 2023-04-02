@@ -1,0 +1,10 @@
+.input {
+  padding: 12px 10px;
+  max-width: 370px;
+  border-radius: 3px;
+  background-color: $white;
+
+  @media (max-width: 640px) {
+    padding: 8px 8px;
+  }
+}
